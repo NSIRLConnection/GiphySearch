@@ -14,6 +14,8 @@
 		0E05A4DA1CD418F200BF96A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E05A4D81CD418F200BF96A8 /* LaunchScreen.storyboard */; };
 		0E05A4E31CD41B6600BF96A8 /* MustOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4E21CD41B6600BF96A8 /* MustOverride.m */; };
 		0E05A4E71CD41D8400BF96A8 /* trending.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E05A4E61CD41D8400BF96A8 /* trending.json */; };
+		0E05A4ED1CD41F4100BF96A8 /* GISHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */; };
+		0E05A4F21CD4266200BF96A8 /* GISLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4F11CD4266200BF96A8 /* GISLog.m */; };
 		4D69D33CF2ED9350D607545E /* libPods-GiphySearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53B94ED03B86C82EA9DDF99 /* libPods-GiphySearch.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,10 @@
 		0E05A4E11CD41B6600BF96A8 /* MustOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MustOverride.h; sourceTree = "<group>"; };
 		0E05A4E21CD41B6600BF96A8 /* MustOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MustOverride.m; sourceTree = "<group>"; };
 		0E05A4E61CD41D8400BF96A8 /* trending.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trending.json; sourceTree = "<group>"; };
+		0E05A4EB1CD41F4100BF96A8 /* GISHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISHTTPClient.h; sourceTree = "<group>"; };
+		0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISHTTPClient.m; sourceTree = "<group>"; };
+		0E05A4F01CD4266200BF96A8 /* GISLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISLog.h; sourceTree = "<group>"; };
+		0E05A4F11CD4266200BF96A8 /* GISLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISLog.m; sourceTree = "<group>"; };
 		7303E578FC625FF37716B665 /* Pods-GiphySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiphySearch/Pods-GiphySearch.release.xcconfig"; sourceTree = "<group>"; };
 		A1B10B209D65B6100FE640FB /* Pods-GiphySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiphySearch/Pods-GiphySearch.debug.xcconfig"; sourceTree = "<group>"; };
 		A53B94ED03B86C82EA9DDF99 /* libPods-GiphySearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GiphySearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +73,8 @@
 		0E05A4C91CD418F200BF96A8 /* GiphySearch */ = {
 			isa = PBXGroup;
 			children = (
+				0E05A4EE1CD4262A00BF96A8 /* Helper */,
+				0E05A4EA1CD41F0400BF96A8 /* Service */,
 				0E05A4E81CD41D9D00BF96A8 /* Stubs */,
 				0E05A4E41CD41B6900BF96A8 /* Vendor */,
 				0E05A4CD1CD418F200BF96A8 /* AppDelegate.h */,
@@ -103,6 +111,24 @@
 				0E05A4E61CD41D8400BF96A8 /* trending.json */,
 			);
 			name = Stubs;
+			sourceTree = "<group>";
+		};
+		0E05A4EA1CD41F0400BF96A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A4EB1CD41F4100BF96A8 /* GISHTTPClient.h */,
+				0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		0E05A4EE1CD4262A00BF96A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A4F01CD4266200BF96A8 /* GISLog.h */,
+				0E05A4F11CD4266200BF96A8 /* GISLog.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		67C375681D4FFB3E50FC2491 /* Frameworks */ = {
@@ -244,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E05A4ED1CD41F4100BF96A8 /* GISHTTPClient.m in Sources */,
+				0E05A4F21CD4266200BF96A8 /* GISLog.m in Sources */,
 				0E05A4CF1CD418F200BF96A8 /* AppDelegate.m in Sources */,
 				0E05A4E31CD41B6600BF96A8 /* MustOverride.m in Sources */,
 				0E05A4CC1CD418F200BF96A8 /* main.m in Sources */,
