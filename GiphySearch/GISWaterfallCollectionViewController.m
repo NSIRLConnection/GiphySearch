@@ -151,6 +151,7 @@
     NSArray *activities = [self.viewModel activityItemsForItemAtIndex:indexPath.row];
     UIActivityViewController *viewController = [[UIActivityViewController alloc] initWithActivityItems:activities
                                                                                  applicationActivities:nil];
+    viewController.popoverPresentationController.sourceView = self.view;
     [self presentViewController:viewController animated:YES completion:nil];
 }
 
