@@ -16,6 +16,33 @@
 		0E05A4E71CD41D8400BF96A8 /* trending.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E05A4E61CD41D8400BF96A8 /* trending.json */; };
 		0E05A4ED1CD41F4100BF96A8 /* GISHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */; };
 		0E05A4F21CD4266200BF96A8 /* GISLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4F11CD4266200BF96A8 /* GISLog.m */; };
+		0E05A4FF1CD42FAE00BF96A8 /* GISAbstractParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A4FE1CD42FAE00BF96A8 /* GISAbstractParser.m */; };
+		0E05A5021CD430D100BF96A8 /* GISAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5011CD430D100BF96A8 /* GISAbstractModel.m */; };
+		0E05A5051CD4335500BF96A8 /* NSTimer+ProxyTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5041CD4335500BF96A8 /* NSTimer+ProxyTarget.m */; };
+		0E05A5081CD433A000BF96A8 /* GISTimerProxyTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5071CD433A000BF96A8 /* GISTimerProxyTarget.m */; };
+		0E05A50E1CD4384200BF96A8 /* GISGiphyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A50D1CD4384200BF96A8 /* GISGiphyData.m */; };
+		0E05A5141CD6978E00BF96A8 /* GISGiphyDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5131CD6978E00BF96A8 /* GISGiphyDataParser.m */; };
+		0E05A5171CD697F300BF96A8 /* GISImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5161CD697F300BF96A8 /* GISImage.m */; };
+		0E05A51A1CD6982800BF96A8 /* GISImageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5191CD6982800BF96A8 /* GISImageParser.m */; };
+		0E05A5231CD69C4200BF96A8 /* GISAbstractGiphyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5221CD69C4200BF96A8 /* GISAbstractGiphyDataManager.m */; };
+		0E05A5261CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5251CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.m */; };
+		0E05A5291CD6A0E000BF96A8 /* GISSearchGiphyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5281CD6A0E000BF96A8 /* GISSearchGiphyDataManager.m */; };
+		0E05A52C1CD6A24F00BF96A8 /* GISGiphyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A52B1CD6A24F00BF96A8 /* GISGiphyAPI.m */; };
+		0E05A52F1CD6A84700BF96A8 /* GISConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A52E1CD6A84700BF96A8 /* GISConstants.m */; };
+		0E05A5451CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5441CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.m */; };
+		0E05A5481CD6BD7200BF96A8 /* GISHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5471CD6BD7200BF96A8 /* GISHomeViewModel.m */; };
+		0E05A54E1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A54D1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.m */; };
+		0E05A55D1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A55C1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.m */; };
+		0E05A5631CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E05A5621CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.m */; };
+		0EF700DF1CD6D64B00E709D8 /* GISHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700DE1CD6D64B00E709D8 /* GISHomeViewController.m */; };
+		0EF700EB1CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700EA1CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.m */; };
+		0EF700EE1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700ED1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.m */; };
+		0EF700F11CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700F01CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.m */; };
+		0EF700F61CD7B92C00E709D8 /* GISSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700F51CD7B92C00E709D8 /* GISSearchViewController.m */; };
+		0EF700F91CD7B99900E709D8 /* GISWaterfallCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700F81CD7B99900E709D8 /* GISWaterfallCollectionViewController.m */; };
+		0EF700FC1CD7BA4C00E709D8 /* GISAbstractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700FB1CD7BA4C00E709D8 /* GISAbstractViewModel.m */; };
+		0EF700FF1CD7C3B200E709D8 /* GISContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF700FE1CD7C3B200E709D8 /* GISContainerViewController.m */; };
+		0EF701031CD7DA1900E709D8 /* GISSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF701011CD7D67300E709D8 /* GISSearchViewModel.m */; };
 		4D69D33CF2ED9350D607545E /* libPods-GiphySearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53B94ED03B86C82EA9DDF99 /* libPods-GiphySearch.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +62,62 @@
 		0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISHTTPClient.m; sourceTree = "<group>"; };
 		0E05A4F01CD4266200BF96A8 /* GISLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISLog.h; sourceTree = "<group>"; };
 		0E05A4F11CD4266200BF96A8 /* GISLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISLog.m; sourceTree = "<group>"; };
+		0E05A4FD1CD42FAE00BF96A8 /* GISAbstractParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISAbstractParser.h; sourceTree = "<group>"; };
+		0E05A4FE1CD42FAE00BF96A8 /* GISAbstractParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISAbstractParser.m; sourceTree = "<group>"; };
+		0E05A5001CD430D100BF96A8 /* GISAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISAbstractModel.h; sourceTree = "<group>"; };
+		0E05A5011CD430D100BF96A8 /* GISAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISAbstractModel.m; sourceTree = "<group>"; };
+		0E05A5031CD4335500BF96A8 /* NSTimer+ProxyTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ProxyTarget.h"; sourceTree = "<group>"; };
+		0E05A5041CD4335500BF96A8 /* NSTimer+ProxyTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ProxyTarget.m"; sourceTree = "<group>"; };
+		0E05A5061CD433A000BF96A8 /* GISTimerProxyTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISTimerProxyTarget.h; sourceTree = "<group>"; };
+		0E05A5071CD433A000BF96A8 /* GISTimerProxyTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISTimerProxyTarget.m; sourceTree = "<group>"; };
+		0E05A50C1CD4384200BF96A8 /* GISGiphyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISGiphyData.h; sourceTree = "<group>"; };
+		0E05A50D1CD4384200BF96A8 /* GISGiphyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISGiphyData.m; sourceTree = "<group>"; };
+		0E05A5121CD6978E00BF96A8 /* GISGiphyDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISGiphyDataParser.h; sourceTree = "<group>"; };
+		0E05A5131CD6978E00BF96A8 /* GISGiphyDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISGiphyDataParser.m; sourceTree = "<group>"; };
+		0E05A5151CD697F300BF96A8 /* GISImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISImage.h; sourceTree = "<group>"; };
+		0E05A5161CD697F300BF96A8 /* GISImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISImage.m; sourceTree = "<group>"; };
+		0E05A5181CD6982800BF96A8 /* GISImageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISImageParser.h; sourceTree = "<group>"; };
+		0E05A5191CD6982800BF96A8 /* GISImageParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISImageParser.m; sourceTree = "<group>"; };
+		0E05A5211CD69C4200BF96A8 /* GISAbstractGiphyDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISAbstractGiphyDataManager.h; sourceTree = "<group>"; };
+		0E05A5221CD69C4200BF96A8 /* GISAbstractGiphyDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISAbstractGiphyDataManager.m; sourceTree = "<group>"; };
+		0E05A5241CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISTrendingGiphyDataManager.h; sourceTree = "<group>"; };
+		0E05A5251CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISTrendingGiphyDataManager.m; sourceTree = "<group>"; };
+		0E05A5271CD6A0E000BF96A8 /* GISSearchGiphyDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISSearchGiphyDataManager.h; sourceTree = "<group>"; };
+		0E05A5281CD6A0E000BF96A8 /* GISSearchGiphyDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISSearchGiphyDataManager.m; sourceTree = "<group>"; };
+		0E05A52A1CD6A24F00BF96A8 /* GISGiphyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISGiphyAPI.h; sourceTree = "<group>"; };
+		0E05A52B1CD6A24F00BF96A8 /* GISGiphyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISGiphyAPI.m; sourceTree = "<group>"; };
+		0E05A52D1CD6A84700BF96A8 /* GISConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISConstants.h; sourceTree = "<group>"; };
+		0E05A52E1CD6A84700BF96A8 /* GISConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISConstants.m; sourceTree = "<group>"; };
+		0E05A5301CD6AFB300BF96A8 /* GISAbstractGiphyDataManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GISAbstractGiphyDataManager+Private.h"; sourceTree = "<group>"; };
+		0E05A5431CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TrackLifeCycle.h"; sourceTree = "<group>"; };
+		0E05A5441CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TrackLifeCycle.m"; sourceTree = "<group>"; };
+		0E05A5461CD6BD7200BF96A8 /* GISHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISHomeViewModel.h; sourceTree = "<group>"; };
+		0E05A5471CD6BD7200BF96A8 /* GISHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISHomeViewModel.m; sourceTree = "<group>"; };
+		0E05A54C1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISAbstractCellViewModel.h; sourceTree = "<group>"; };
+		0E05A54D1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISAbstractCellViewModel.m; sourceTree = "<group>"; };
+		0E05A5521CD6C1BB00BF96A8 /* GISViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GISViewModelDelegate.h; sourceTree = "<group>"; };
+		0E05A55B1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISDownsampledImageCellViewModel.h; sourceTree = "<group>"; };
+		0E05A55C1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISDownsampledImageCellViewModel.m; sourceTree = "<group>"; };
+		0E05A5611CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISDownsampledImageCellViewModelParser.h; sourceTree = "<group>"; };
+		0E05A5621CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISDownsampledImageCellViewModelParser.m; sourceTree = "<group>"; };
+		0EF700DD1CD6D64B00E709D8 /* GISHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISHomeViewController.h; sourceTree = "<group>"; };
+		0EF700DE1CD6D64B00E709D8 /* GISHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISHomeViewController.m; sourceTree = "<group>"; };
+		0EF700E91CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISCollectionViewWaterfallCell.h; sourceTree = "<group>"; };
+		0EF700EA1CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISCollectionViewWaterfallCell.m; sourceTree = "<group>"; };
+		0EF700EC1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISCollectionViewWaterfallHeader.h; sourceTree = "<group>"; };
+		0EF700ED1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISCollectionViewWaterfallHeader.m; sourceTree = "<group>"; };
+		0EF700EF1CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISCollectionViewWaterfallFooter.h; sourceTree = "<group>"; };
+		0EF700F01CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISCollectionViewWaterfallFooter.m; sourceTree = "<group>"; };
+		0EF700F41CD7B92C00E709D8 /* GISSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISSearchViewController.h; sourceTree = "<group>"; };
+		0EF700F51CD7B92C00E709D8 /* GISSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISSearchViewController.m; sourceTree = "<group>"; };
+		0EF700F71CD7B99900E709D8 /* GISWaterfallCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISWaterfallCollectionViewController.h; sourceTree = "<group>"; };
+		0EF700F81CD7B99900E709D8 /* GISWaterfallCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISWaterfallCollectionViewController.m; sourceTree = "<group>"; };
+		0EF700FA1CD7BA4C00E709D8 /* GISAbstractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISAbstractViewModel.h; sourceTree = "<group>"; };
+		0EF700FB1CD7BA4C00E709D8 /* GISAbstractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISAbstractViewModel.m; sourceTree = "<group>"; };
+		0EF700FD1CD7C3B200E709D8 /* GISContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISContainerViewController.h; sourceTree = "<group>"; };
+		0EF700FE1CD7C3B200E709D8 /* GISContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISContainerViewController.m; sourceTree = "<group>"; };
+		0EF701001CD7D67300E709D8 /* GISSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISSearchViewModel.h; sourceTree = "<group>"; };
+		0EF701011CD7D67300E709D8 /* GISSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISSearchViewModel.m; sourceTree = "<group>"; };
 		7303E578FC625FF37716B665 /* Pods-GiphySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiphySearch/Pods-GiphySearch.release.xcconfig"; sourceTree = "<group>"; };
 		A1B10B209D65B6100FE640FB /* Pods-GiphySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiphySearch/Pods-GiphySearch.debug.xcconfig"; sourceTree = "<group>"; };
 		A53B94ED03B86C82EA9DDF99 /* libPods-GiphySearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GiphySearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,16 +156,20 @@
 		0E05A4C91CD418F200BF96A8 /* GiphySearch */ = {
 			isa = PBXGroup;
 			children = (
-				0E05A4EE1CD4262A00BF96A8 /* Helper */,
+				0E05A53F1CD6BC1400BF96A8 /* View */,
+				0E05A53B1CD6BB9600BF96A8 /* Config */,
 				0E05A4EA1CD41F0400BF96A8 /* Service */,
+				0E05A4F61CD42D5000BF96A8 /* Model */,
+				0E05A4EE1CD4262A00BF96A8 /* Helper */,
 				0E05A4E81CD41D9D00BF96A8 /* Stubs */,
-				0E05A4E41CD41B6900BF96A8 /* Vendor */,
 				0E05A4CD1CD418F200BF96A8 /* AppDelegate.h */,
 				0E05A4CE1CD418F200BF96A8 /* AppDelegate.m */,
 				0E05A4D31CD418F200BF96A8 /* Main.storyboard */,
 				0E05A4D61CD418F200BF96A8 /* Assets.xcassets */,
 				0E05A4D81CD418F200BF96A8 /* LaunchScreen.storyboard */,
 				0E05A4DB1CD418F200BF96A8 /* Info.plist */,
+				0E05A5431CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.h */,
+				0E05A5441CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.m */,
 				0E05A4CA1CD418F200BF96A8 /* Supporting Files */,
 			);
 			path = GiphySearch;
@@ -116,8 +203,9 @@
 		0E05A4EA1CD41F0400BF96A8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				0E05A4EB1CD41F4100BF96A8 /* GISHTTPClient.h */,
-				0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */,
+				0E05A5371CD6BB5400BF96A8 /* API */,
+				0E05A53E1CD6BBDB00BF96A8 /* HTTP Client */,
+				0E05A5331CD6BB1400BF96A8 /* Manager */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -125,10 +213,205 @@
 		0E05A4EE1CD4262A00BF96A8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0E05A4E41CD41B6900BF96A8 /* Vendor */,
+				0E05A53D1CD6BBBD00BF96A8 /* NSTimer */,
+				0E05A53C1CD6BBAC00BF96A8 /* Logging */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		0E05A4F61CD42D5000BF96A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A53A1CD6BB7E00BF96A8 /* Image */,
+				0E05A5391CD6BB7000BF96A8 /* Base */,
+				0E05A5381CD6BB6500BF96A8 /* Giphy Data */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E05A5331CD6BB1400BF96A8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5341CD6BB3200BF96A8 /* Base */,
+				0E05A5351CD6BB3900BF96A8 /* Trending */,
+				0E05A5361CD6BB4500BF96A8 /* Search */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		0E05A5341CD6BB3200BF96A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5301CD6AFB300BF96A8 /* GISAbstractGiphyDataManager+Private.h */,
+				0E05A5211CD69C4200BF96A8 /* GISAbstractGiphyDataManager.h */,
+				0E05A5221CD69C4200BF96A8 /* GISAbstractGiphyDataManager.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		0E05A5351CD6BB3900BF96A8 /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5241CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.h */,
+				0E05A5251CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.m */,
+			);
+			name = Trending;
+			sourceTree = "<group>";
+		};
+		0E05A5361CD6BB4500BF96A8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5271CD6A0E000BF96A8 /* GISSearchGiphyDataManager.h */,
+				0E05A5281CD6A0E000BF96A8 /* GISSearchGiphyDataManager.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		0E05A5371CD6BB5400BF96A8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A52A1CD6A24F00BF96A8 /* GISGiphyAPI.h */,
+				0E05A52B1CD6A24F00BF96A8 /* GISGiphyAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0E05A5381CD6BB6500BF96A8 /* Giphy Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A50C1CD4384200BF96A8 /* GISGiphyData.h */,
+				0E05A50D1CD4384200BF96A8 /* GISGiphyData.m */,
+				0E05A5121CD6978E00BF96A8 /* GISGiphyDataParser.h */,
+				0E05A5131CD6978E00BF96A8 /* GISGiphyDataParser.m */,
+			);
+			name = "Giphy Data";
+			sourceTree = "<group>";
+		};
+		0E05A5391CD6BB7000BF96A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A4FD1CD42FAE00BF96A8 /* GISAbstractParser.h */,
+				0E05A4FE1CD42FAE00BF96A8 /* GISAbstractParser.m */,
+				0E05A5001CD430D100BF96A8 /* GISAbstractModel.h */,
+				0E05A5011CD430D100BF96A8 /* GISAbstractModel.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		0E05A53A1CD6BB7E00BF96A8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5151CD697F300BF96A8 /* GISImage.h */,
+				0E05A5161CD697F300BF96A8 /* GISImage.m */,
+				0E05A5181CD6982800BF96A8 /* GISImageParser.h */,
+				0E05A5191CD6982800BF96A8 /* GISImageParser.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		0E05A53B1CD6BB9600BF96A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A52D1CD6A84700BF96A8 /* GISConstants.h */,
+				0E05A52E1CD6A84700BF96A8 /* GISConstants.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		0E05A53C1CD6BBAC00BF96A8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
 				0E05A4F01CD4266200BF96A8 /* GISLog.h */,
 				0E05A4F11CD4266200BF96A8 /* GISLog.m */,
 			);
-			name = Helper;
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		0E05A53D1CD6BBBD00BF96A8 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5031CD4335500BF96A8 /* NSTimer+ProxyTarget.h */,
+				0E05A5041CD4335500BF96A8 /* NSTimer+ProxyTarget.m */,
+				0E05A5061CD433A000BF96A8 /* GISTimerProxyTarget.h */,
+				0E05A5071CD433A000BF96A8 /* GISTimerProxyTarget.m */,
+			);
+			name = NSTimer;
+			sourceTree = "<group>";
+		};
+		0E05A53E1CD6BBDB00BF96A8 /* HTTP Client */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A4EB1CD41F4100BF96A8 /* GISHTTPClient.h */,
+				0E05A4EC1CD41F4100BF96A8 /* GISHTTPClient.m */,
+			);
+			name = "HTTP Client";
+			sourceTree = "<group>";
+		};
+		0E05A53F1CD6BC1400BF96A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EF701071CD7DEAA00E709D8 /* Container */,
+				0EF701051CD7DE5700E709D8 /* Base */,
+				0EF701041CD7DE3800E709D8 /* Search */,
+				0EF700F21CD6FD4800E709D8 /* Home */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0EF700F21CD6FD4800E709D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EF700DD1CD6D64B00E709D8 /* GISHomeViewController.h */,
+				0EF700DE1CD6D64B00E709D8 /* GISHomeViewController.m */,
+				0E05A5461CD6BD7200BF96A8 /* GISHomeViewModel.h */,
+				0E05A5471CD6BD7200BF96A8 /* GISHomeViewModel.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		0EF701041CD7DE3800E709D8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0EF700F41CD7B92C00E709D8 /* GISSearchViewController.h */,
+				0EF700F51CD7B92C00E709D8 /* GISSearchViewController.m */,
+				0EF701001CD7D67300E709D8 /* GISSearchViewModel.h */,
+				0EF701011CD7D67300E709D8 /* GISSearchViewModel.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		0EF701051CD7DE5700E709D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A5521CD6C1BB00BF96A8 /* GISViewModelDelegate.h */,
+				0EF700FA1CD7BA4C00E709D8 /* GISAbstractViewModel.h */,
+				0EF700FB1CD7BA4C00E709D8 /* GISAbstractViewModel.m */,
+				0E05A55B1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.h */,
+				0E05A55C1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.m */,
+				0EF700F71CD7B99900E709D8 /* GISWaterfallCollectionViewController.h */,
+				0EF700F81CD7B99900E709D8 /* GISWaterfallCollectionViewController.m */,
+				0E05A54C1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.h */,
+				0E05A54D1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.m */,
+				0E05A5611CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.h */,
+				0E05A5621CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.m */,
+				0EF700E91CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.h */,
+				0EF700EA1CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.m */,
+				0EF700EC1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.h */,
+				0EF700ED1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.m */,
+				0EF700EF1CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.h */,
+				0EF700F01CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		0EF701071CD7DEAA00E709D8 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				0EF700FD1CD7C3B200E709D8 /* GISContainerViewController.h */,
+				0EF700FE1CD7C3B200E709D8 /* GISContainerViewController.m */,
+			);
+			name = Container;
 			sourceTree = "<group>";
 		};
 		67C375681D4FFB3E50FC2491 /* Frameworks */ = {
@@ -182,6 +465,7 @@
 				TargetAttributes = {
 					0E05A4C61CD418F200BF96A8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y7X74KK352;
 					};
 				};
 			};
@@ -270,11 +554,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E05A54E1CD6BF3F00BF96A8 /* GISAbstractCellViewModel.m in Sources */,
+				0E05A55D1CD6C7EF00BF96A8 /* GISDownsampledImageCellViewModel.m in Sources */,
+				0E05A5631CD6CD9D00BF96A8 /* GISDownsampledImageCellViewModelParser.m in Sources */,
+				0EF700F91CD7B99900E709D8 /* GISWaterfallCollectionViewController.m in Sources */,
+				0E05A5291CD6A0E000BF96A8 /* GISSearchGiphyDataManager.m in Sources */,
 				0E05A4ED1CD41F4100BF96A8 /* GISHTTPClient.m in Sources */,
 				0E05A4F21CD4266200BF96A8 /* GISLog.m in Sources */,
+				0E05A5051CD4335500BF96A8 /* NSTimer+ProxyTarget.m in Sources */,
+				0E05A52C1CD6A24F00BF96A8 /* GISGiphyAPI.m in Sources */,
+				0E05A4FF1CD42FAE00BF96A8 /* GISAbstractParser.m in Sources */,
+				0E05A5231CD69C4200BF96A8 /* GISAbstractGiphyDataManager.m in Sources */,
 				0E05A4CF1CD418F200BF96A8 /* AppDelegate.m in Sources */,
+				0EF700EB1CD6FB9400E709D8 /* GISCollectionViewWaterfallCell.m in Sources */,
 				0E05A4E31CD41B6600BF96A8 /* MustOverride.m in Sources */,
+				0EF700EE1CD6FBE300E709D8 /* GISCollectionViewWaterfallHeader.m in Sources */,
+				0EF700FC1CD7BA4C00E709D8 /* GISAbstractViewModel.m in Sources */,
+				0E05A5141CD6978E00BF96A8 /* GISGiphyDataParser.m in Sources */,
+				0E05A50E1CD4384200BF96A8 /* GISGiphyData.m in Sources */,
+				0EF700DF1CD6D64B00E709D8 /* GISHomeViewController.m in Sources */,
+				0E05A51A1CD6982800BF96A8 /* GISImageParser.m in Sources */,
+				0EF701031CD7DA1900E709D8 /* GISSearchViewModel.m in Sources */,
+				0E05A5021CD430D100BF96A8 /* GISAbstractModel.m in Sources */,
 				0E05A4CC1CD418F200BF96A8 /* main.m in Sources */,
+				0E05A5261CD6A0CC00BF96A8 /* GISTrendingGiphyDataManager.m in Sources */,
+				0E05A52F1CD6A84700BF96A8 /* GISConstants.m in Sources */,
+				0EF700F11CD6FBF200E709D8 /* GISCollectionViewWaterfallFooter.m in Sources */,
+				0E05A5081CD433A000BF96A8 /* GISTimerProxyTarget.m in Sources */,
+				0E05A5171CD697F300BF96A8 /* GISImage.m in Sources */,
+				0E05A5451CD6BCB900BF96A8 /* UIViewController+TrackLifeCycle.m in Sources */,
+				0EF700FF1CD7C3B200E709D8 /* GISContainerViewController.m in Sources */,
+				0EF700F61CD7B92C00E709D8 /* GISSearchViewController.m in Sources */,
+				0E05A5481CD6BD7200BF96A8 /* GISHomeViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +698,13 @@
 			baseConfigurationReference = A1B10B209D65B6100FE640FB /* Pods-GiphySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GiphySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsirlconnection.GiphySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -399,10 +713,13 @@
 			baseConfigurationReference = 7303E578FC625FF37716B665 /* Pods-GiphySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GiphySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsirlconnection.GiphySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

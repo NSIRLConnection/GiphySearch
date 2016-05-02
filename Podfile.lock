@@ -1,4 +1,7 @@
 PODS:
+  - CHTCollectionViewWaterfallLayout (0.9.4):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.4)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.4)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -41,12 +44,14 @@ PODS:
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout
   - libextobjc
   - PromiseKit/Promise (~> 1.7)
   - SDWebImage (~> 3.7)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: db74be9135826d285f45ff163fd090e57c99fc50
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   PromiseKit: dcbaebb85aa88f2c9bad196335cdb201a9342b88
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
