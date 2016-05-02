@@ -32,7 +32,7 @@
     if (!self) {
         return nil;
     }
-    _searchString = searchString;
+    _searchString = [searchString stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     return self;
 }
 
