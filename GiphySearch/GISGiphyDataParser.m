@@ -19,7 +19,7 @@
         NSURL *URL = [NSURL URLWithString:responseObject[@"url"]];
         NSDictionary *images = responseObject[@"images"];
         GISImage *fixedWidthDownsampledImage = [[self class] resultForResponseObject:images[@"fixed_width_downsampled"] targetClass:[GISImage class]];
-        GISImage *originalImage = [[self class] resultForResponseObject:images[@"fixed_width_downsampled"] targetClass:[GISImage class]];
+        GISImage *originalImage = [[self class] resultForResponseObject:images[@"original"] targetClass:[GISImage class]];
         return [GISGiphyData giphyDataWithId:id URL:URL fixedWidthDownsampledImage:fixedWidthDownsampledImage originalImage:originalImage];
     }
     else if ([responseObject isKindOfClass:[NSArray class]]) {

@@ -15,6 +15,7 @@
 #import "GISHomeViewModel.h"
 #import "GISAbstractCellViewModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "GISPageViewController.h"
 
 #define CELL_IDENTIFIER @"WaterfallCell"
 #define HEADER_IDENTIFIER @"WaterfallHeader"
@@ -148,11 +149,14 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSArray *activities = [self.viewModel activityItemsForItemAtIndex:indexPath.row];
-    UIActivityViewController *viewController = [[UIActivityViewController alloc] initWithActivityItems:activities
-                                                                                 applicationActivities:nil];
-    viewController.popoverPresentationController.sourceView = self.view;
-    [self presentViewController:viewController animated:YES completion:nil];
+//    NSArray *activities = [self.viewModel activityItemsForItemAtIndex:indexPath.row];
+//    UIActivityViewController *viewController = [[UIActivityViewController alloc] initWithActivityItems:activities
+//                                                                                 applicationActivities:nil];
+//    viewController.popoverPresentationController.sourceView = self.view;
+//    [self presentViewController:viewController animated:YES completion:nil];
+//    GISDetailViewController *viewController = [[GISDetailViewController alloc] initWithViewModel:self.viewModel index:indexPath.row];
+    GISPageViewController *viewController = [[GISPageViewController alloc] initWithViewModel:self.viewModel index:indexPath.row];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout

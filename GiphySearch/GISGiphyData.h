@@ -9,7 +9,7 @@
 #import "GISAbstractModel.h"
 @class GISImage;
 
-@interface GISGiphyData : GISAbstractModel
+@interface GISGiphyData : GISAbstractModel <NSCopying>
 
 @property (readonly, nonatomic, copy, nonnull) NSString *id;
 @property (readonly, nonatomic, copy, nonnull) NSURL *URL;

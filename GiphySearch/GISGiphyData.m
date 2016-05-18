@@ -7,6 +7,7 @@
 //
 
 #import "GISGiphyData.h"
+#import "GISImage.h"
 
 @implementation GISGiphyData
 
@@ -32,6 +33,15 @@
 
 - (BOOL)isEqual:(GISGiphyData *)object {
     return [self.id isEqualToString:object.id];
+}
+
+- (instancetype)copyWithZone:(NSZone *)zone {
+    GISGiphyData *copy = [[[self class] alloc] init];
+    copy->_id = [self.id copy];
+    copy->_URL = [self.URL copy];
+    copy->_originalImage = [self.originalImage copy];
+    copy->_fixedWidthDownsampledImage = [self.fixedWidthDownsampledImage copy];
+    return copy;
 }
 
 @end

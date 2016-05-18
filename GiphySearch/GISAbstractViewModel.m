@@ -45,9 +45,17 @@
     SUBCLASS_MUST_OVERRIDE;
 }
 
+- (GISGiphyData *)giphyDataForItemAtIndex:(NSInteger)index {
+    return self.giphyData[index];
+}
+
 - (NSArray *)activityItemsForItemAtIndex:(NSInteger)index {
     GISGiphyData *giphyData = self.giphyData[index];
     return @[giphyData.URL];
+}
+
+- (NSInteger)numberOfPages {
+    return self.giphyData.count;
 }
 
 @end
