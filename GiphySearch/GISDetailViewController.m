@@ -19,6 +19,7 @@
 
 @property (readwrite, nonatomic, strong, nonnull) UIImageView *imageView;
 @property (readonly, nonatomic, strong, nonnull) GISAbstractViewModel *viewModel;
+@property (readwrite, nonatomic, strong, nonnull) UIProgressView *progressView;
 
 @end
 
@@ -38,6 +39,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     [self loadImage];
+    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.progressView];
 }
 
 - (void)loadImage {
@@ -62,19 +65,22 @@
     @weakify(self);
     [self.imageView sd_setImageWithURL:giphyData.originalImage.URL
                       placeholderImage:image
-                             completed:^(UIImage *image,
-                                         NSError *error,
-                                         SDImageCacheType cacheType,
-                                         NSURL *imageURL) {
-                                 if (cacheType != SDImageCacheTypeMemory) {
-                                     @strongify(self);
-                                     CATransition *transition = [CATransition animation];
-                                     transition.duration = 0.35f;
-                                     transition.type = kCATransitionFade;
-                                     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-                                     [self.imageView.layer addAnimation:transition forKey:kCATransition];
-                                 }
-                             }];
+                               options:SDWebImageHighPriority
+                              progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                                  dispatch_async(dispatch_get_main_queue(), ^(void) {
+                                      self.progressView.progress = (float)receivedSize/(float)expectedSize;
+                                  });
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if (cacheType != SDImageCacheTypeMemory) {
+            @strongify(self);
+            CATransition *transition = [CATransition animation];
+            transition.duration = 0.35f;
+            transition.type = kCATransitionFade;
+            transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+            [self.imageView.layer addAnimation:transition forKey:kCATransition];
+        }
+        self.progressView.hidden = YES;
+    }];
 }
 
 - (void)loadDownsampledImage {
@@ -100,6 +106,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.imageView.frame = self.view.bounds;
+    self.progressView.frame = CGRectMake(0, CGRectGetMaxY(self.imageView.frame)-4, CGRectGetWidth(self.view.frame), 4);
 }
 
 @end
