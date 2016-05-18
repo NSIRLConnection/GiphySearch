@@ -33,7 +33,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
+    UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [shareButton setTitle:@"Share" forState:UIControlStateNormal];
+    [shareButton addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
+    [shareButton sizeToFit];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:shareButton];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(GISDetailViewController *)viewController {
@@ -54,11 +58,11 @@
     return [[self.viewControllers firstObject] index];
 }
 
-- (void)share:(UIBarButtonItem *)sender {
+- (void)share:(UIButton *)sender {
     NSArray *activities = [self.viewModel activityItemsForItemAtIndex:self.currentIndex];
     UIActivityViewController *viewController = [[UIActivityViewController alloc] initWithActivityItems:activities
                                                                                  applicationActivities:nil];
-    viewController.popoverPresentationController.sourceView = self.navigationItem.rightBarButtonItem;
+    viewController.popoverPresentationController.sourceView = sender;
     [self presentViewController:viewController animated:YES completion:nil];
 }
 
