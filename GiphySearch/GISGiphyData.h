@@ -13,10 +13,11 @@
 
 @property (readonly, nonatomic, copy, nonnull) NSString *id;
 @property (readonly, nonatomic, copy, nonnull) NSURL *URL;
+@property (readonly, nonatomic, copy, nonnull) NSString *slug;
 @property (readonly, nonatomic, copy, nonnull) GISImage *fixedWidthDownsampledImage;
 @property (readonly, nonatomic, copy, nonnull) GISImage *originalImage;
 
-+ (nonnull instancetype)giphyDataWithId:(nonnull NSString *)id URL:(nonnull NSURL *)URL fixedWidthDownsampledImage:(nonnull GISImage *)fixedWidthDownsampledImage originalImage:(nonnull GISImage *)originalImage;
++ (nonnull instancetype)giphyDataWithId:(nonnull NSString *)id URL:(nonnull NSURL *)URL slug:(nonnull NSString *)slug fixedWidthDownsampledImage:(nonnull GISImage *)fixedWidthDownsampledImage originalImage:(nonnull GISImage *)originalImage;
 - (BOOL)isEqual:(nonnull id)object;
 
 @end

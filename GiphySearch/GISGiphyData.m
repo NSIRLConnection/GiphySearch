@@ -11,20 +11,21 @@
 
 @implementation GISGiphyData
 
-- (instancetype)initWithId:(NSString *)id URL:(NSURL *)URL fixedWidthDownsampledImage:(GISImage *)fixedWidthDownsampledImage originalImage:(GISImage *)originalImage {
+- (instancetype)initWithId:(NSString *)id URL:(NSURL *)URL slug:(NSString *)slug fixedWidthDownsampledImage:(GISImage *)fixedWidthDownsampledImage originalImage:(GISImage *)originalImage {
     self = [super init];
     if (!self) {
         return nil;
     }
     _id = id;
     _URL = URL;
+    _slug = slug;
     _fixedWidthDownsampledImage = fixedWidthDownsampledImage;
     _originalImage = originalImage;
     return self;
 }
 
-+ (instancetype)giphyDataWithId:(NSString *)id URL:(NSURL *)URL fixedWidthDownsampledImage:(GISImage *)fixedWidthDownsampledImage originalImage:(GISImage *)originalImage {
-    return [[self alloc] initWithId:id URL:URL fixedWidthDownsampledImage:fixedWidthDownsampledImage originalImage:originalImage];
++ (instancetype)giphyDataWithId:(NSString *)id URL:(NSURL *)URL slug:(NSString *)slug fixedWidthDownsampledImage:(GISImage *)fixedWidthDownsampledImage originalImage:(GISImage *)originalImage {
+    return [[self alloc] initWithId:id URL:URL slug:(NSString *)slug fixedWidthDownsampledImage:fixedWidthDownsampledImage originalImage:originalImage];
 }
 
 + (Class)parserClass {

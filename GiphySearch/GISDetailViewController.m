@@ -14,12 +14,17 @@
 #import "GISAbstractViewModel.h"
 #import <libextobjc/EXTScope.h>
 #import "GISPageViewController.h"
+#import "GISSearchViewModel.h"
+#import "GISViewModelDelegate.h"
+#import "GISSearchViewController.h"
 
 @interface GISDetailViewController ()
 
 @property (readwrite, nonatomic, strong, nonnull) UIImageView *imageView;
 @property (readonly, nonatomic, strong, nonnull) GISAbstractViewModel *viewModel;
 @property (readwrite, nonatomic, strong, nonnull) UIProgressView *progressView;
+@property (readonly, nonatomic, copy, nonnull) GISGiphyData *giphyData;
+@property (readonly, nonatomic, strong, nonnull) GISSearchViewController *searchViewController;
 
 @end
 
@@ -32,6 +37,7 @@
     }
     _viewModel = viewModel;
     _index = index;
+    _searchViewController = [[GISSearchViewController alloc] initWithSearchString:[_viewModel giphyDataForItemAtIndex:_index].slug];
     return self;
 }
 
@@ -41,15 +47,24 @@
     [self loadImage];
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.progressView];
+    [self.view addSubview:self.searchViewController.view];
+//    [self.relatedViewModel update];
+}
+
+- (void)viewModelDidUpdate {
+    
+}
+
+- (GISGiphyData *)giphyData {
+    return [self.viewModel giphyDataForItemAtIndex:self.index];
 }
 
 - (void)loadImage {
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:self.imageView];
     SDImageCache *cache = [SDImageCache sharedImageCache];
-    GISGiphyData *giphyData = [self.viewModel giphyDataForItemAtIndex:self.index];
-    UIImage *image = [cache imageFromDiskCacheForKey:giphyData.fixedWidthDownsampledImage.URL.absoluteString];
+    UIImage *image = [cache imageFromDiskCacheForKey:self.giphyData.fixedWidthDownsampledImage.URL.absoluteString];
     if (image) {
         [self loadOriginalImage];
     }
@@ -60,10 +75,9 @@
 
 - (void)loadOriginalImage {
     SDImageCache *cache = [SDImageCache sharedImageCache];
-    GISGiphyData *giphyData = [self.viewModel giphyDataForItemAtIndex:self.index];
-    UIImage *image = [cache imageFromDiskCacheForKey:giphyData.fixedWidthDownsampledImage.URL.absoluteString];
+    UIImage *image = [cache imageFromDiskCacheForKey:self.giphyData.fixedWidthDownsampledImage.URL.absoluteString];
     @weakify(self);
-    [self.imageView sd_setImageWithURL:giphyData.originalImage.URL
+    [self.imageView sd_setImageWithURL:self.giphyData.originalImage.URL
                       placeholderImage:image
                                options:SDWebImageHighPriority
                               progress:^(NSInteger receivedSize, NSInteger expectedSize) {
@@ -84,9 +98,8 @@
 }
 
 - (void)loadDownsampledImage {
-    GISGiphyData *giphyData = [self.viewModel giphyDataForItemAtIndex:self.index];
     @weakify(self);
-    [self.imageView sd_setImageWithURL:giphyData.fixedWidthDownsampledImage.URL
+    [self.imageView sd_setImageWithURL:self.giphyData.fixedWidthDownsampledImage.URL
                              completed:^(UIImage *image,
                                          NSError *error,
                                          SDImageCacheType cacheType,
@@ -105,8 +118,13 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    self.imageView.frame = self.view.bounds;
-    self.progressView.frame = CGRectMake(0, CGRectGetMaxY(self.imageView.frame)-4, CGRectGetWidth(self.view.frame), 4);
+//    self.imageView.frame = self.view.bounds;
+    CGFloat width = CGRectGetWidth(self.view.frame);
+    CGFloat multiplier = width/self.giphyData.originalImage.width.floatValue;
+    CGFloat height = self.giphyData.originalImage.height.floatValue * multiplier;
+    self.imageView.frame = CGRectMake(0, 64, width, height);
+    self.progressView.frame = CGRectMake(0, CGRectGetMaxY(self.imageView.frame)-4, width, 4);
+    self.searchViewController.view.frame = CGRectMake(0, CGRectGetMaxY(self.imageView.frame), width, CGRectGetMaxY(self.view.frame));
 }
 
 @end

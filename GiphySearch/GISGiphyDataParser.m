@@ -17,10 +17,11 @@
     if ([responseObject isKindOfClass:[NSDictionary class]]) {
         NSString *id = responseObject[@"id"];
         NSURL *URL = [NSURL URLWithString:responseObject[@"url"]];
+        NSString *slug = responseObject[@"slug"];
         NSDictionary *images = responseObject[@"images"];
         GISImage *fixedWidthDownsampledImage = [[self class] resultForResponseObject:images[@"fixed_width_downsampled"] targetClass:[GISImage class]];
         GISImage *originalImage = [[self class] resultForResponseObject:images[@"original"] targetClass:[GISImage class]];
-        return [GISGiphyData giphyDataWithId:id URL:URL fixedWidthDownsampledImage:fixedWidthDownsampledImage originalImage:originalImage];
+        return [GISGiphyData giphyDataWithId:id URL:URL slug:slug fixedWidthDownsampledImage:fixedWidthDownsampledImage originalImage:originalImage];
     }
     else if ([responseObject isKindOfClass:[NSArray class]]) {
         NSMutableArray <GISGiphyData *> *array = [NSMutableArray array];
